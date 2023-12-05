@@ -16,7 +16,7 @@ name: Fortify AST Scan
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   schedule:
     - cron: '0 6 * * *' 
     
