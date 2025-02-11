@@ -48,9 +48,9 @@ jobs:
           #DO_PACKAGE_DEBUG: false
           PACKAGE_EXTRA_OPTS: -bt none
           #FOD_SAST_SCAN_EXTRA_OPTS: none
-          DO_WAIT: true
+          DO_WAIT: false
           DO_POLICY_CHECK: true
-          POLICY_CHECK_ACTION: https://scm.my.org/shared-repos/fcli-actions/check-policy.yaml
+          #POLICY_CHECK_ACTION: https://scm.my.org/shared-repos/fcli-actions/check-policy.yaml
           #POLICY_CHECK_EXTRA_OPTS: --on-unsigned=ignore
           DO_JOB_SUMMARY: true
           #JOB_SUMMARY_ACTION: https://scm.my.org/shared-repos/fcli-actions/job-summary.yaml
