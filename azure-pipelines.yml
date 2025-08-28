@@ -44,17 +44,13 @@ stages:
       inputs:
         targetPath: $(Build.ArtifactStagingDirectory)
         
-- task: FortifyOnDemandStatic@8
-  displayName: 'Run Fortify on Demand static assessment on app'
+- task: FortifyDASTAutomated@2
   inputs:
-    FortifyProjects: app
-    FodConnection: 'AMS_pjtest'
-    ReleaseOptions: 0
-    ReleaseId: 720872
-    EntitlementSelection: 1
-    EntitlementPreference: 1
-    OverrideScanSettings: 2
-    InProgressScanActionType: 2
-    RemediationScanPreference: 2
-    PollingInterval: 0
-    PolicyFailAction: 0
+    FodConnection: 'KyraTest'
+    ReleaseOptions: '0'
+    ReleaseId: 170611
+    AssessmentTypeId: 149
+    EntitlementId: 3556
+    EntitlementFrequencyType: 'Subscription'
+    OverrideScanSettings: '2'
+    PolicyFailAction: '0'
